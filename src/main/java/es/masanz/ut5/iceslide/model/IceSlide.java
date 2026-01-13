@@ -1,5 +1,7 @@
 package es.masanz.ut5.iceslide.model;
 
+import static es.masanz.ut5.iceslide.model.Celda.HIELO;
+
 public class IceSlide {
 
     // TODO 01: Definicion de atributos
@@ -57,11 +59,46 @@ public class IceSlide {
 
     public boolean completado(){
         // TODO 08: indicar si el nivel ha sido resuelto
+        for (int i = 0; i < escenario.length; i++) {
+            for (int j = 0; j < escenario[0].length; j++) {
+                if (escenario[i][j] != 2){
+
+                }
+            }
+        }
         return false;
     }
 
     public int[][] getEscenario() {
         // TODO 09: devolver el objeto correspondiente
         return null;
+    }
+
+    public int getCurlLevel() {
+        return curlLevel;
+    }
+
+    public void setCurlLevel(int curlLevel) {
+        this.curlLevel = curlLevel;
+    }
+
+    public void setEscenario(int[][] escenario) {
+        this.escenario = escenario;
+    }
+
+    public int getFilaJugadaor() {
+        return filaJugadaor;
+    }
+
+    public void setFilaJugadaor(int filaJugadaor) {
+        this.filaJugadaor = filaJugadaor;
+    }
+
+    public int getColumnaJugador() {
+        return columnaJugador;
+    }
+
+    public void setColumnaJugador(int columnaJugador) {
+        this.columnaJugador = columnaJugador;
     }
 }
